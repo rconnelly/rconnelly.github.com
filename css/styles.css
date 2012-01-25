@@ -9,7 +9,6 @@ body {
 
 .container p {
     color: #6c6c6c;
-    text-align: left;
     margin: 10px 0 0 0;
 }
 
@@ -87,6 +86,11 @@ body {
 }
 
 
+.container.content section.twitter .time
+{
+    color: #265185;
+}
+
 .container.content section.twitter .twitter-logo
 {
     background-image: url(../images/twitter_icon_1.png);
@@ -133,13 +137,14 @@ body {
 .container.content p.readmore
 {
     padding-left: 20px;
-    background: url(../images/arrow.png) no-repeat left top;
+    background: url(../images/arrow.png) no-repeat left 50%;
     font-weight: bold;
+    color: #000;
 }
 
 .container.footer
 {
-    background: url(../images/footer_background.png) repeat-x left top;
+    background: url(../images/footer_background.png) repeat-x top left;
 }
 
 .container.footer header h2
@@ -194,7 +199,32 @@ address .email
     margin-bottom: 40px;
 }
 
-	
+.arrows {
+    float: right;
+    vertical-align: middle;
+}
+.arrows a
+{
+    display: block;
+    float: right;
+}
+
+.arrows a#left
+{
+    margin-right: 10px;
+}
+
+.arrows a#left.disabled {
+    width: 25px; height: 25px;
+    background: url("../images/left_blog_arrow_disabled.png") no-repeat 3px 3px;
+    text-indent: -99999px;
+}
+
+.arrows a#right {
+    width: 25px; height: 25px;
+    background: url("../images/right_arrow_blog_enabled.png") no-repeat 3px 3px;
+    text-indent: -99999px;
+}
 
 /* ============================= */
 /* ! Layout for mobile version   */
