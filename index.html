@@ -3,6 +3,7 @@
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class=no-js manifest="default.appcache"> <!--<![endif]-->
 
+
 <head>
   <meta charset=utf-8>
 
@@ -51,9 +52,14 @@
     <!--[if lte IE 9]><link rel=stylesheet href="css/ie.css" type="text/css" media=screen /><![endif]-->
 
     
+    <!--[if gte IE 9]><style type="text/css">.gradient{filter:none}</style><![endif]-->
+
+
+    
     <link rel=stylesheet href="css/1140.css" type="text/css" media=screen />
 
-    <link rel=stylesheet href='css/c05aa07.css'>
+    <link rel=stylesheet href='css/22f6fe5.css'>
+
 
   
   <script src="js/libs/modernizr-custom.js"></script>
@@ -69,7 +75,7 @@
 
 
 
-<div class="container header">
+<div class="container header .gradient">
     <div class=row>
         <div class="fourcol logo last">
             <p><img src="img/logo.png" alt="Quad.io"></p>
@@ -78,7 +84,7 @@
 </div>
 
 
-<div class="container banner">
+<div class="container banner .gradient">
     <div class=row>
         <div class="twelvecol last">
             <p>a</p>
@@ -86,9 +92,29 @@
     </div>
 </div>
 
-<div class="container content">
+<div class="container content .gradient">
     <div class=row>
         <div class=sixcol>
+            <section class=blog>
+                <header>
+                    <div class=blog-logo>
+                        <h2>The Quad Blog</h2>
+                        <p>Check out the latest posts</p>
+                    </div>
+                </header>
+                <article class=last-article>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Nulla nec arcu orci. Praesent a enim lorem, sed scelerisque ante.
+                        Vivamus enim lorem, dapibus a fermentum ut, tempus et nisi. In
+                        posuere lorem non Praesent varius nec gravida neque porttitor. In
+                        Nulla eros non nulla varius nec fermentum neque porttitor.
+                    </p>
+                    <p class=readmore><a href="#">Read more</a></p>
+                </article>
+
+            </section>
+        </div>
+        <div class="sixcol last">
             <section class=twitter>
                 <header>
                     <div class=twitter-logo>
@@ -99,44 +125,23 @@
                 <article>
                     <h3>@Quadio</h3>
                     <p>Nulla nec arcu orci. Praesent a enim lorem, sed scelerisque ante.
-                        Vivamus enim lorem, dapibus a fermentum ut, tempus et nisi. In
-                        posuere eros non nulla varius nec gravida neque porttitor.
+                        Vivamus enim lorem, dapibus a fermentum ut, tempus et nisi.
                     </p>
                     <p class=time>23 hours ago</p>
                 </article>
-            </section>
-        </div>
-        <div class="sixcol last">
-            <section class=blog>
-                <header>
-                    <div class=blog-logo>
-                        <h2>The Quad Blog</h2>
-                        <p>Check out the latest posts</p>
-                    </div>
-                </header>
-                <article>
-                    <h3>Lorem Ipsum</h3>
+                <article class=last-article>
+                    <h3>@Quadio</h3>
                     <p>Nulla nec arcu orci. Praesent a enim lorem, sed scelerisque ante.
-                        Vivamus enim lorem, dapibus a fermentum ut, tempus et nisi. In
-                        posuere eros non nulla varius nec gravida neque porttitor.
+                        Vivamus enim lorem, dapibus a ut, tempus et nisi.
                     </p>
-                    <p class=arrows>
-
-                        <a href="#" id=right class=disabled>
-                            Next
-                        </a>
-                        <a href="#" id=left class=disabled>
-                            Prev
-                        </a>
-                    </p>
-                    <p class=readmore>Read more</p>
+                    <p class=time>2 days ago</p>
                 </article>
             </section>
         </div>
     </div>
 </div>
 
-<div class="container footer">
+<div class="container footer .gradient">
     <div class=row>
         <div class=twocol>
             <section class=links>
@@ -145,45 +150,51 @@
                 </header>
                 <nav>
                     <ul>
-                        <li>Services</li>
-                        <li>Products</li>
-                        <li>Contact</li>
-                        <li>About</li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
                     </ul>
                 </nav>
             </section>
         </div>
-        <div class=threecol>
-            <section class=contact>
-                <header>
-                    <h2>Contact</h2>
-                </header>
-                <address>
-                    <ul>
-                        <li class=companyname>Quad IO, inc</li>
-                        <li class=address>3954 Hovis Court<br/>
-                            Atlanta, GA 30319</li>
-                        <li class=phone>404.590.6933</li>
-                        <li class=email><a href="mailto:hello@quad.io">hello@quad.io</a></li>
-                    </ul>
-                </address>
-            </section>
-        </div>
-        <div class="sevencol last">
+        <div class=sixcol>
             <section class=contact>
                 <header>
                     <h2>Follow Us</h2>
                 </header>
-
+                <p>
+                    Nulla nec arcu orci. Praesent a enim lorem, sed scelerisque ante.
+                    Vivamus enim lorem, dapibus a ut, tempus et nisi.
+                </p>
                 <nav>
                     <ul>
                         <li>
-                            <img src="img/facebook_icon_footer.png" alt=Facebook />
-                            <img src="img/twitter_icon_footer.png" alt=Twitter />
-                            <img src="img/blog_icon_footer.png" alt=Blog />
+                            <img src="img/social/share/facebook.png" alt=Facebook />
+                            <img src="img/social/share/twitter.png" alt=Twitter />
+                            <img src="img/social/share/linkedin.png" alt="Linked In"/>
                         </li>
                     </ul>
                 </nav>
+            </section>
+        </div>
+        <div class="fourcol last">
+            <section class=contact>
+                <header>
+                    <h2>Contact</h2>
+                </header>
+                <article>
+                <address>
+                    <ul>
+                        <li class=companyname>Quad IO, inc
+                        <li class=name>Ryan Connelly</li>
+                        <li class=phone>404.590.6933</li>
+                        <li class=email><a href="mailto:hello@quad.io">hello@quad.io</a></li>
+                    </ul>
+                </address>
+                <aside>
+                </aside>
+                </article>
             </section>
         </div>
     </div>
