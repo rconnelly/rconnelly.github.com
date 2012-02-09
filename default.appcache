@@ -1,11 +1,12 @@
 CACHE MANIFEST
 
-# version 2012-02-09 02:01:21
+# version 2012-02-09 02:17:37
 
 CACHE:
 # html files
 404.html
 index.html
+team/*.html
 services/*.html
 products/*.html
 *.html
