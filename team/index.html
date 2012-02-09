@@ -60,7 +60,7 @@
     
     <link rel=stylesheet href="/css/1140.css" type="text/css" media=screen />
 
-    <link rel=stylesheet href='/css/18d1b90.css'>
+    <link rel=stylesheet href='/css/65ff202.css'>
 
 
     
@@ -76,22 +76,53 @@
 <body>
 
 
+
+
+      
+
+
 <div class="container header">
     <div class=row>
         <div class="fourcol logo">
             <p><a href="/"><img src="/img/logo.png" alt="Quad.io"/></a></p>
         </div>
-        <div class="eight last top-nav">
+        <div class="eightcol last top-nav">
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/products/">Products</a></li>
-                    <li><a href="/services/">Services</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-                    <li><a href="/team/">Team</a></li>
+                    <li><a href="/products/" class="">Products</a></li>
+                    <li><a href="/services/" class="">Services</a></li>
+                    <li><a href="/blog/" class="">Blog</a></li>
+                    <li><a href="/team/" class=selected>Team</a></li>
                 </ul>
             </nav>
 
+        </div>
+    </div>
+</div>
+
+<div class="container dropdownnav">
+    <div class=row>
+        <div class="twelvecol last dropdown-nav">
+            <nav>
+                <select id=pageSelect name=pageSelect>
+                    <option value="/">
+                        Home
+                    </option>
+                    <option value="/products/">
+                        Products
+                    </option>
+                    <option value="/services/">
+                        Services
+                    </option>
+                    <option value="/blog/">
+                        Blog
+                    </option>
+                    <option value="/team/" selected>
+                        Team
+                    </option>
+                </select>
+            </nav>
         </div>
     </div>
 </div>
@@ -115,9 +146,10 @@
 
 
 
-<script src="/js/libs/zepto.min.js"></script>
+<script type="text/javascript" src="/js/libs/zepto.min.js"></script>
 
-<script src="/js/mylibs/helper.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="/js/mylibs/helper.js"></script>
 
 
 
