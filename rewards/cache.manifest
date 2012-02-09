@@ -1,0 +1,45 @@
+CACHE MANIFEST
+
+# v2
+
+CACHE:
+# html
+index.html
+
+# js
+app/app.js
+app/routes.js
+
+app/views/viewport.js
+app/views/newcard.js
+app/views/accountcard.js
+app/views/dealscard.js
+app/views/dealslist.js
+app/views/welcomemessage.js
+app/views/redeemactionsheet.js
+app/views/offerscard.js
+app/views/accountcard.js
+app/views/pointscard.js
+
+app/stores/stores.js
+app/stores/deals.js
+app/stores/accounts.js
+
+app/models/account.js
+app/models/deal.js
+app/models/store.js
+
+app/proxies/odataproxy.js
+
+lib/touch/sencha-touch.js
+lib/touch/pkgs/platform/mvc.js
+
+# html
+index.html
+
+# css
+lib/touch/resources/css/sencha-touch.css
+public/resources/css/application.css
+
+NETWORK:
+*

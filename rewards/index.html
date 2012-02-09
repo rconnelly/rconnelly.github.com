@@ -1,0 +1,48 @@
+<!doctype html>
+<html manifest="cache.manifest">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+    <title>Quad Rewards</title>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    
+    <link rel="stylesheet" href="lib/touch/resources/css/sencha-touch.css" type="text/css">
+    <link rel="stylesheet" href="public/resources/css/application.css" type="text/css">
+</head>
+<body>
+    <script type="text/javascript" src="lib/touch/sencha-touch.js"></script>
+    <script type="text/javascript" src="lib/touch/pkgs/platform/mvc.js"></script>
+    
+    <div id="sencha-app">
+        <script type="text/javascript" src="app/routes.js"></script>
+        <script type="text/javascript" src="app/app.js"></script>
+        
+        <!-- Place your view files here -->
+        <div id="sencha-views">
+            <script type="text/javascript" src="app/views/viewport.js"></script>
+            <script type="text/javascript" src="app/views/pointscard.js"></script>
+            <script type="text/javascript" src="app/views/dealscard.js"></script>
+            <script type="text/javascript" src="app/views/dealslist.js"></script>
+            <script type="text/javascript" src="app/views/accountcard.js"></script>
+            <script type="text/javascript" src="app/views/offerscard.js"></script>
+            <script type="text/javascript" src="app/views/welcomemessage.js"></script>
+            <script type="text/javascript" src="app/views/redeemactionsheet.js"></script>
+        </div>
+       
+        <!-- Place your model files here -->
+        <div id="sencha-models">
+            <script type="text/javascript" src="app/models/deal.js"></script>
+            <script type="text/javascript" src="app/models/store.js"></script>
+            <script type="text/javascript" src="app/stores/deals.js"></script>
+            <script type="text/javascript" src="app/stores/stores.js"></script>
+        </div>
+        
+        <!-- Place your controller files here -->
+        <div id="sencha-controllers">
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+CACHE MANIFEST
+
+# version 2012-01-25 19:07:02
+
+CACHE:
+# html files
+404.html
+index.html
+
+
+# css files
+css/c84b403.css
+
+
+
+# js files
+js/2718c66.js
+js/libs/zepto.min.js
+js/libs/respond.min.js
+js/libs/jquery-1.7.1.min.js
+
+
+
+FALLBACK:
+
+NETWORK:
+*
