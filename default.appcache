@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# version 2012-02-09 14:36:07
+# version 2012-02-09 17:38:22
 
 CACHE:
 # html files
@@ -12,15 +12,16 @@ products/index.html
 
 
 # css files
-css/65ff202.css
+css/271a340.css
 
 
 
 # js files
-js/76c1563.js
+js/6b0237c.js
 js/libs/zepto.min.js
 js/libs/respond.min.js
 js/libs/jquery-1.7.1.min.js
+js/libs/icanhaz.min.js
 js/mylibs/helper.js
 
 

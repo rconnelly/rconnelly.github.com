@@ -291,8 +291,30 @@
 
 })(document);
 
+/** Plugins */
+
+(function($){
+
+    $.fn.tmpl = function(d) {
+        var s = $(this[0]).html().trim();
+        if (d) {
+            for (k in d) {
+                s = s.replace(new RegExp('\\${' + k + '}', 'g'), d[k]);
+            }
+        }
+        return $(s);
+    };
+
+})(Zepto);
+
+
 $('document').ready(function(){
-    $('#pageSelect').bind('change',function(evt){
-        window.location = $(this).val();
+    $.getJSON('https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ioquad&count=5&callback=?',
+    function(data, textStatus){
+        $(data).each(function(){
+            var postDate = new Date(this.created_at);
+            this.created_at = $.format.date(postDate,'MM/dd/yyyy h:mma');
+            $('#twitterPost').tmpl(this).appendTo('section.twitter');
+        });
     });
 });

@@ -60,7 +60,7 @@
     
     <link rel=stylesheet href="/css/1140.css" type="text/css" media=screen />
 
-    <link rel=stylesheet href='/css/65ff202.css'>
+    <link rel=stylesheet href='/css/271a340.css'>
 
 
     
@@ -168,27 +168,19 @@
                     <div class=twitter-logo>
                         <h2>Twitter</h2>
 
-                        <p>What's new @ioQuad</p>
+                        <p>What's new <a href="http://www.twitter.com/ioquad">@ioQuad</a></p>
                     </div>
                 </header>
-                <article>
-                    <h3>@ioQuad</h3>
 
-                    <p>Nulla nec arcu orci. Praesent a enim lorem, sed scelerisque ante.
-                        Vivamus enim lorem, dapibus a fermentum ut, tempus et nisi.
-                    </p>
+                <script type="text/html" id=twitterPost><article>
+                        <h3>@ioQuad</h3>
 
-                    <p class=time>23 hours ago</p>
-                </article>
-                <article class=last-article>
-                    <h3>@ioQuad</h3>
+                        <p>${text}
+                        </p>
 
-                    <p>Nulla nec arcu orci. Praesent a enim lorem, sed scelerisque ante.
-                        Vivamus enim lorem, dapibus a ut, tempus et nisi.
-                    </p>
+                        <p class="time">${created_at}</p>
+                    </article>;</script>
 
-                    <p class=time>2 days ago</p>
-                </article>
             </section>
         </div>
     </div>
@@ -270,6 +262,7 @@
 
 
 <script type="text/javascript" src="/js/libs/zepto.min.js"></script>
+<script type="text/javascript" src="/js/plugins.js"></script>
 
 <script type="text/javascript" src="/js/mylibs/helper.js"></script>
 
