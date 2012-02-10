@@ -590,24 +590,27 @@ Zepto(document).ready(function () {
             }
         }
         return $(s);
-    };
+    }
 
+    $.fn.exists = function(){return this.length>0;}
 })(Zepto);
-
-
-$('document').ready(function(){
-    $.getJSON('https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ioquad&count=5&callback=?',
-    function(data, textStatus){
-        $(data).each(function(){
-            var postDate = new Date(this.created_at);
-            this.created_at = $.format.date(postDate,'MM/dd/yyyy h:mma');
-            $('#twitterPost').tmpl(this).appendTo('section.twitter');
-        });
-    });
-});
 
 $('document').ready(function(){
     $('#pageSelect').bind('change',function(evt){
         window.location = $(this).val();
     });
+});
+
+$('document').ready(function () {
+    if($('#twitterPost').exists())
+    {
+        $.getJSON('https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=ioquad&count=5&callback=?',
+            function (data, textStatus) {
+                $(data).each(function () {
+                    var postDate = new Date(this.created_at);
+                    this.created_at = $.format.date(postDate, 'MM/dd/yyyy h:mma');
+                    $('#twitterPost').tmpl(this).appendTo('section.twitter');
+                });
+            });
+    }
 });
