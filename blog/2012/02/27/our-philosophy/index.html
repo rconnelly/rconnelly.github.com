@@ -65,11 +65,14 @@
 
 <script src="/js/libs/modernizr-custom.js"></script>
 
-<script>Modernizr.mq("(min-width:0)")||document.write('<script src="/js/libs/respond.min.js"><\/script>');</script>
+<script>Modernizr.mq('(min-width:0)') || document.write('<script src="/js/libs/respond.min.js"><\/script>')</script>
 
 
 <script type="text/javascript" src="http://use.typekit.com/eyv7jwq.js"></script>
-<script type="text/javascript">try{Typekit.load()}catch(e){};</script>
+<script type="text/javascript">try {
+    Typekit.load();
+} catch (e) {
+}</script>
 
 </head>
 
@@ -181,7 +184,14 @@
 <script type="text/javascript" src="/js/mylibs/helper.js"></script>
 
 
-<script>window.onload=function(){MBP.scaleFix()};MBP.hideUrlBarOnLoad();</script>
+<script>
+    // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+    window.onload = function () {
+        MBP.scaleFix();
+    }
+    MBP.hideUrlBarOnLoad();
+
+</script>
 
 
 </body>
