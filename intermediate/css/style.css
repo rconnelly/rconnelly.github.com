@@ -466,8 +466,25 @@ body.home .container.content {
 
 .container.footer .links {
 }
+/** Team **/
 
-/** twitter / blog*/
+section.team
+{
+    padding-left: 175px;
+    height:190px;
+}
+
+section.team.ryan
+{
+    background:transparent url('/img/team/ryan.png') no-repeat left top;
+}
+
+section.team.marat
+{
+    background:transparent url('/img/team/marat.png') no-repeat left top;
+}
+
+/** twitter / blog **/
 
 .clear
 {
@@ -501,6 +518,10 @@ section.blog p.post-meta .post-date
     color: black;
 }
 
+body.jobs .content p{
+    color: black;
+}
+
 
 section.blog p.post-meta .post-date
 {
@@ -514,6 +535,11 @@ section.blog article {
     background-color: white;
     border-radius: 10px;
     border: solid 1px #bbb;
+}
+
+sidebar.blog
+{
+    margin-top: 20px !important;
 }
 
 section.twitter article.last-article,
@@ -533,6 +559,24 @@ section.twitter .twitter-logo {
 
 section.blog .blog-logo {
     background-image: url(/img/social/rss.png);
+}
+
+section.blog ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+section.blog .post-date
+{
+    display: block;
+    font-size: 80%;
+    color: black;
+}
+
+section.blog li
+{
+    margin-left: 0;
 }
 
 .container section header h2 {
@@ -657,6 +701,10 @@ address .email {
 
 /** Pages **/
 
+body.services, body.blog .content
+{
+}
+
 /** Post **/
 
 body.post section.blog h3
@@ -760,7 +808,7 @@ body.post section.blog h4
 
 /* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
- 
+
 }
 
 /* ==|== non-semantic helper classes ========================================
