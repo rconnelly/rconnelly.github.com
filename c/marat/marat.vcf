@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Address Book 6.1//EN
+N:Sharifullin;Marat;;;
+FN:Marat Sharifullin
+ORG:Quad IO\, inc;
+EMAIL;type=INTERNET;type=WORK;type=pref:marat@quad.io
+item1.URL;type=pref:http://www.quad.io
+item1.X-ABLabel:_$!<HomePage>!$_
+CATEGORIES:card
+UID:19516bb5-804e-443b-901c-ad6fc16520e6
+X-ABUID:DE6D01FF-2262-46BC-B61B-19522331A2DB:ABPerson
+END:VCARD

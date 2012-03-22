@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Address Book 6.1//EN
+N:Svechin;Anatoliy;;;
+FN:Anatoliy Svechin
+ORG:Quad IO\, inc;
+EMAIL;type=INTERNET;type=WORK;type=pref:anatoliy@quad.io
+item1.URL;type=pref:http://www.quad.io
+item1.X-ABLabel:_$!<HomePage>!$_
+CATEGORIES:card
+UID:6a8c8063-7ea8-4efe-9532-ec987e3b5f24
+X-ABUID:AB764AB2-4948-42ED-8FEF-DEBEFBC36812:ABPerson
+END:VCARD

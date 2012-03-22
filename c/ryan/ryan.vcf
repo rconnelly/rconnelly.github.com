@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Address Book 6.1//EN
+N:Connelly;Ryan;;;
+FN:Ryan Connelly
+ORG:Quad IO\, inc;
+EMAIL;type=INTERNET;type=WORK;type=pref:ryan@quad.io
+TEL;type=WORK;type=VOICE;type=pref:770-590-6933
+TEL;type=CELL;type=VOICE:404-281-5878
+item1.URL;type=pref:http://www.quad.io
+item1.X-ABLabel:_$!<HomePage>!$_
+CATEGORIES:card
+UID:fc6bb9c9-ba87-438e-82e1-5386761e6bc2
+X-ABUID:C1AF3874-40F7-425E-8F15-1AACDFEAB624:ABPerson
+END:VCARD
