@@ -358,7 +358,6 @@ Author:
 body {
     font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 110%;
-    background-color: #eee;
 }
 
 .container p {
@@ -402,11 +401,6 @@ body {
     margin:13px 0 10px 0;
 }
 
-.container.header .row .logo
-{
-    text-align: center;
-}
-
 /** Banner **/
 
 .container.banner {
@@ -434,14 +428,12 @@ body {
     font-weight: lighter;
 }
 
-body.home .container.content {
-    background-color: #eee;
-    border-top: 0;
-}
-
-.container.content
-{
-    border-top: 1px solid #fff;
+.container.content {
+    border-top: solid 1px #eee;
+    background: -moz-linear-gradient(top, #dbd9e3 0%, #fff 60%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dbd9e3), color-stop(60%, #fff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #dbd9e3 0%, #fff 60%);
+    background: linear-gradient(top, #dbd9e3 0%, #fff 60%);
 }
 
 .container.content p {
@@ -466,77 +458,18 @@ body.home .container.content {
 
 .container.footer .links {
 }
-/** Team **/
 
-section.team
-{
-    padding-left: 175px;
-    height:190px;
-}
+/** twitter / blog*/
 
-section.team.ryan
-{
-    background:transparent url('/img/team/ryan.png') no-repeat left top;
-}
-
-section.team.marat
-{
-    background:transparent url('/img/team/marat.png') no-repeat left top;
-}
-
-
-section.team.anatoliy
-{
-    background:transparent url('/img/team/anatoliy.png') no-repeat left top;
-}
-
-
-/** twitter / blog **/
-
-.clear
-{
-    clear: both;
-}
-
-section.twitter .twitter-logo,
-section.blog .blog-logo {
+.container.content section.twitter .twitter-logo,
+.container.content section.blog .blog-logo {
     padding-left: 80px;
     padding-bottom: 20px;
     background-repeat: no-repeat;
 }
 
-section.blog h3.post-title
-{
-    font-size: 130%;
-    float: left;
-}
-
-section.blog p.post-meta
-{
-    float: right;
-}
-
-section.blog p.post-meta .post-author,
-section.blog p.post-meta .post-date
-{
-    text-align:right;
-    display:block;
-    font-size: 90%;
-    color: black;
-}
-
-body.jobs .content p{
-    color: black;
-}
-
-
-section.blog p.post-meta .post-date
-{
-    color: #265185;
-}
-
-section.twitter article,
-section.blog article {
+.container.content section.twitter article,
+.container.content section.blog article {
     margin-bottom: 20px;
     padding: 20px;
     background-color: white;
@@ -544,46 +477,23 @@ section.blog article {
     border: solid 1px #bbb;
 }
 
-sidebar.blog
-{
-    margin-top: 20px !important;
-}
-
-section.twitter article.last-article,
-section.blog article.last-article {
+.container.content section.twitter article.last-article,
+.container.content section.blog article.last-article {
     margin-bottom: 0;
 }
 
-section.twitter .time {
+.container.content section.twitter .time {
     color: #265185;
     font-size: 90%;
     line-height: 120%;
 }
 
-section.twitter .twitter-logo {
+.container.content section.twitter .twitter-logo {
     background-image: url(/img/social/twitter.png);
 }
 
-section.blog .blog-logo {
+.container.content section.blog .blog-logo {
     background-image: url(/img/social/rss.png);
-}
-
-section.blog ul
-{
-    list-style: none;
-    padding: 0;
-}
-
-section.blog .post-date
-{
-    display: block;
-    font-size: 80%;
-    color: black;
-}
-
-section.blog li
-{
-    margin-left: 0;
 }
 
 .container section header h2 {
@@ -610,7 +520,7 @@ section.blog li
     color: #696969;
 }
 
-section.blog p.readmore {
+.container.content p.readmore {
     margin-top: 20px;
     padding-left: 20px;
     background: url(/img/arrow.png) no-repeat left 50%;
@@ -686,16 +596,11 @@ address .email {
     padding: 20px 0;
 }
 
-.home .container.copyright {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #eee;
-}
-
 .container.copyright {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    background-color: #fff;
+    background-color: #eee;
+
 }
 
 .container.copyright p {
@@ -705,25 +610,6 @@ address .email {
 .container.copyright .last p {
     display: none;
 }
-
-/** Pages **/
-
-body.services, body.blog .content
-{
-}
-
-/** Post **/
-
-body.post section.blog h3
-{
-    font-size: 130%;
-}
-
-body.post section.blog h4
-{
-    margin: 20px 0 10px 0;
-}
-
 
 /*
 * Media queries for responsive design github.com/h5bp/mobile-boilerplate/wiki/The-Style
@@ -741,7 +627,7 @@ body.post section.blog h4
 
     .container.header .row .logo
     {
-        text-align: left;
+        text-align: center;
     }
 
     .container.header nav {
@@ -816,6 +702,9 @@ body.post section.blog h4
 /* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 
+    .container.header .logo #logoLink {
+        background-image: url(/img/logo@2x.png);
+    }
 }
 
 /* ==|== non-semantic helper classes ========================================
