@@ -725,10 +725,11 @@ body.post section.blog h3
     font-size: 130%;
 }
 
-body.post section.blog h4
+body section.blog h4
 {
     margin: 20px 0 10px 0;
 }
+
 
 
 /*
