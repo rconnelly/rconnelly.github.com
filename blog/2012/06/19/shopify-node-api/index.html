@@ -7,7 +7,7 @@
 <head>
     <meta charset=utf-8>
 
-<title>Index</title>
+<title>shopnode: A Shopify Node Api</title>
 <meta name=description content="">
 
 <meta name=author content="Ryan Connelly">
@@ -73,8 +73,7 @@
 
 </head>
 
-<body class=services>
-
+<body class=post>
 
 
 
@@ -90,9 +89,9 @@
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/services/" class=selected>Services</a></li>
+                    <li><a href="/services/" class="">Services</a></li>
                     <li><a href="/jobs/" class="">Jobs</a></li>
-                    <li><a href="/blog/" class="">Blog</a></li>
+                    <li><a href="/blog/" class=selected>Blog</a></li>
                     <li><a href="/team/" class="">Team</a></li>
                 </ul>
             </nav>
@@ -112,10 +111,10 @@
                     <option value="/products/">
                         Products
                     </option>
-                    <option value="/services/" selected>
+                    <option value="/services/">
                         Services
                     </option>
-                    <option value="/blog/">
+                    <option value="/blog/" selected>
                         Blog
                     </option>
                     <option value="/team/">
@@ -130,23 +129,45 @@
 <div class="container content">
     <div class=row>
         <div class="twelvecol last">
-            <section class=team>
+            <section class=blog>
                 <header>
                     <div class=blog-logo>
-                        <h2>Web and Mobile Application Development</h2>
+                        <h2>shopnode: A Shopify Node Api</h2>
+                        <p><span class=post-author>Ryan Connelly,</span>
+                            <span class=post-date>Jun 19, 2012</span></p>
                     </div>
                 </header>
 
                 <article class=last-article>
-                    Our team of highly skilled software engineers and designers will wireframe, design, and implement
-                    web and mobile applications. Our software skillsets are iOS native development, Html 5, Javascript,
-                    and .Net technologies.
+                    <p><img alt='Alt Shopify Logo' src='/img/blogs/shopify.png'/></p>
+
+<p>Over the past week, I&#8217;ve been working on implementing an api to <a href='http://www.shopify.com'>Shopify</a> for a side project that we are working on. Apparently, there are no solid node libraries out there for talking with shopify. The only one I found was very limited and didn&#8217;t support all of the api calls.</p>
+
+<p>Check it out: <a href='http://www.quad.io/shopnode'>http://www.quad.io/shopnode</a></p>
+
+<p>Github: <a href='http://www.github.com/rconnelly/shopnode'>http://www.github.com/rconnelly/shopnode</a></p>
+
+<p>It&#8217;s still in a very rough state, but I&#8217;m releasing it to the public. Before we submit it to be included in NPM, I&#8217;ll need to test it a bit more. I&#8217;m also looking at writing a simple shopify public app which would use this library. Right now, we are only going to use this library for a private app.</p>
+
+<p>It&#8217;s been very helpful to develop a node application and I&#8217;ve gained a lot of experience on this little project.</p>
+<hr/>
+<h2 id=what_we_used>What we used</h2>
+
+<ul>
+<li><a href='http://www.nodejs.org'>Node JS</a> - Dev Platform</li>
+
+<li><a href='http://www.travis-ci.org'>Travis-ci</a> - Continous Integration System</li>
+
+<li><a href='http://www.vowsjs.org'>Vows</a> - BDD test framework</li>
+
+<li><a href='http://www.github.com'>Github</a> - Source control</li>
+</ul>
+
                 </article>
 
             </section>
         </div>
     </div>
-
 </div>
 
 <div class="container copyright">
