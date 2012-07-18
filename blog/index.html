@@ -147,13 +147,13 @@
 <p>Read about DVCS <a href='http://en.wikipedia.org/wiki/Distributed_revision_control'>here</a>.</p>
 
 <p>Below is a graph that illustrates how we manage our builds. The goal is to keep our production code stable, without slowing our dev cycle down. After some trial and error, we came up with this approach.</p>
-
-<p><img src='/img/blogs/git_branch_mgt.png' alt='Alt Branch Mgt Illustration'/></p>
-
+<hr/>
+<p><img alt='Alt Branch Mgt Illustration' src='/img/blogs/git_branch_mgt.png'/></p>
+<hr/>
 <h2 id=production_vs_development>Production vs Development</h2>
 
 <p>There are two types of branches: Production and Development (QA). Active development is always done on Development branches. Code can only be merged into production branches from Development (never feature branches). Code can be committed directly to Patch branches, but great care should be taken. Only critical, pre-approved bug fixes should go into a patch branch.</p>
-
+<hr/>
 <h3 id=permanent_branches>Permanent Branches</h3>
 
 <p>There are two main, permanent branches that are always available: Master and Development. All continuous integration builds and QA builds come from Development branches Feature and Development.</p>
@@ -169,7 +169,7 @@
 <p>The development branch is a some-what-stable version of the software. QA builds from this branch. New features should never be put directly into this branch but instead a Feature branch should first be created to keep the Development branch clean.</p>
 
 <p><em>Naming Convention:</em> development</p>
-
+<hr/>
 <h3 id=temporary_branches>Temporary Branches</h3>
 
 <p>Patch and Features branches are typically have short lifespans and are there for the purpose of keeping the master and development branches stable.</p>
@@ -199,7 +199,7 @@
                 </header>
 
                 <article class=last-article>
-                    <p><img src='/img/blogs/shopify.png' alt='Alt Shopify Logo'/></p>
+                    <p><img alt='Alt Shopify Logo' src='/img/blogs/shopify.png'/></p>
 
 <p>Over the past week, I&#8217;ve been working on a node api for <a href='http://www.shopify.com'>Shopify</a>. It&#8217;s for a side project that we are working on. Apparently, there are no solid node libraries out there for talking with shopify. The only one I found was very limited and didn&#8217;t support all of the api calls. So I decided to write my own module.</p>
 
