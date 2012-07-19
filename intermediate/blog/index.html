@@ -61,7 +61,7 @@
 <!-- The 1140px Grid - http://cssgrid.net/ -->
 <link rel="stylesheet" href="/css/1140.css?v=1" type="text/css" media="screen"/>
 
-<link rel='stylesheet' href='/css/df9dabc.css'>
+<link rel='stylesheet' href='/css/157132a.css'>
 
 
 <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -140,63 +140,6 @@
             <section class="blog">
                 <header>
                     <div class="blog-logo">
-                        <h2>Source Control Branch Management with Git</h2>
-                        <p><span class="post-author">Ryan Connelly,</span>
-                            <span class="post-date">Jul 18, 2012</span></p>
-                    </div>
-                </header>
-
-                <article class="last-article">
-                    <p>We try to keep a structured approach to branch management. We love GIT because it provides a straight forward approach to branching and merging. For those that have yet to embrace the power of DVCS <span>http://en.wikipedia.org/wiki/Distributed_revision_control</span>, I hightly recommend you at least explore it.</p>
-
-<p>Read about DVCS <a href='http://en.wikipedia.org/wiki/Distributed_revision_control'>here</a>.</p>
-
-<p>Below is a graph that illustrates how we manage our builds. The goal is to keep our production code stable, without slowing our dev cycle down. After some trial and error, we came up with this approach.</p>
-<hr />
-<p><img alt='Alt Branch Mgt Illustration' src='/img/blogs/git_branch_mgt.png' /></p>
-<hr />
-<h2 id='production_vs_development'>Production vs Development</h2>
-
-<p>There are two types of branches: Production and Development (QA). Active development is always done on Development branches. Code can only be merged into production branches from Development (never feature branches). Code can be committed directly to Patch branches, but great care should be taken. Only critical, pre-approved bug fixes should go into a patch branch.</p>
-<hr />
-<h3 id='permanent_branches'>Permanent Branches</h3>
-
-<p>There are two main, permanent branches that are always available: Master and Development. All continuous integration builds and QA builds come from Development branches Feature and Development.</p>
-
-<h4 id='master_branch'>Master Branch</h4>
-
-<p>No active development is ever done on master. Master is always contains a production stable version of the application. Developers always merge from Development to Master</p>
-
-<p><em>Naming Convention:</em> master</p>
-
-<h4 id='development_branch'>Development Branch</h4>
-
-<p>The development branch is a some-what-stable version of the software. QA builds from this branch. New features should never be put directly into this branch but instead a Feature branch should first be created to keep the Development branch clean.</p>
-
-<p><em>Naming Convention:</em> development</p>
-<hr />
-<h3 id='temporary_branches'>Temporary Branches</h3>
-
-<p>Patch and Features branches are typically have short lifespans and are there for the purpose of keeping the master and development branches stable.</p>
-
-<h4 id='patch_branches'>Patch Branches</h4>
-
-<p>From time to time, a critical issue will arise in a production build. When this occurs, a temporary Patch Branch is created. Any critical bug fixes can be worked on in this branch. Once a tested stable version is ready, it can be merged back into master. At that point, the code will also be merged back into the development branch.</p>
-
-<p><em>Naming Convention:</em> patch-v{major}.{minor}.{patch} <em>Example:</em> patch-v2.3.1</p>
-
-<h4 id='feature_branches'>Feature Branches</h4>
-
-<p>When new features are required, a new branch should always be created. While this branch may only be on a developer&#8217;s local repository, the branch can also be pushed to remote if multiple developers need to work on the same feature.</p>
-
-<p><em>Naming Convention:</em> feature-{description} <em>Example:</em> feature-inventory-tracking</p>
-                </article>
-
-            </section>
-            
-            <section class="blog">
-                <header>
-                    <div class="blog-logo">
                         <h2>shopnode: A Shopify Node Api</h2>
                         <p><span class="post-author">Ryan Connelly,</span>
                             <span class="post-date">Jun 19, 2012</span></p>
@@ -204,7 +147,7 @@
                 </header>
 
                 <article class="last-article">
-                    <p><img alt='Alt Shopify Logo' src='/img/blogs/shopify.png' /></p>
+                    <p><img src='/img/blogs/shopify.png' alt='Alt Shopify Logo' /></p>
 
 <p>Over the past week, I&#8217;ve been working on a node api for <a href='http://www.shopify.com'>Shopify</a>. It&#8217;s for a side project that we are working on. Apparently, there are no solid node libraries out there for talking with shopify. The only one I found was very limited and didn&#8217;t support all of the api calls. So I decided to write my own module.</p>
 
@@ -274,11 +217,6 @@
                 <ul>
                     
                     <li>
-                        <span class="post-title"><a href="/blog/2012/07/18/source-control-management-with-git">Source Control Branch Management with Git<a/></span>
-                        <span class="post-date">Jul 18, 2012</span>
-                    </li>
-                    
-                    <li>
                         <span class="post-title"><a href="/blog/2012/06/19/shopify-node-api">shopnode: A Shopify Node Api<a/></span>
                         <span class="post-date">Jun 19, 2012</span>
                     </li>
@@ -323,6 +261,28 @@
     MBP.hideUrlBarOnLoad();
 
 </script>
+
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30221376-1']);
+    _gaq.push(['_setDomainName', 'quad.io']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+<!-- begin olark code --><script type='text/javascript'>/*{literal}<![CDATA[*/
+window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('8860-113-10-5687');/*]]>{/literal}*/</script>
+<!-- end olark code -->
 
 
 </body>
