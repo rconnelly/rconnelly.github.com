@@ -515,6 +515,8 @@ section.blog h3.post-title
 {
     font-size: 130%;
     float: left;
+    margin-bottom: 20px;
+    max-width: 390px;
 }
 
 section.blog p.post-meta
